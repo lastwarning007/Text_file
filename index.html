@@ -61,6 +61,7 @@
                     <option value="php">.php</option>
                     <option value="css">.css</option>
                     <option value="js">.js</option>
+                    <option value="py">.py</option> <!-- Added Python option -->
                 </select>
             </div>
         </div>
@@ -78,6 +79,7 @@
             <p>Developer BY: LAST WARNING & BADLIAR</p>
         </div>
     </div>
+
     <script>
         function generateFile() {
             const text = document.getElementById("textInput").value;
@@ -96,6 +98,7 @@
                 php: "application/x-httpd-php",
                 css: "text/css",
                 js: "application/javascript",
+                py: "text/x-python", // Added MIME type for Python
             };
 
             // Use the correct MIME type based on the file format
